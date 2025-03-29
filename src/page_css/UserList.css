@@ -1,0 +1,139 @@
+/* Container Styles */
+.userlist-container {
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card Styles */
+.userlist-card {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.userlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.userlist-header h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.logout-btn {
+  background: #ff4d4d;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #e60000;
+}
+
+/* User List */
+.userlist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Buttons */
+.user-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background: #4d94ff;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #005ce6;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #e60000;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.page-btn {
+  background: #4d94ff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.no-users {
+  text-align: center;
+  color: gray;
+}
