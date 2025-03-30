@@ -60,7 +60,12 @@ function UserList() {
                   </p>
                 </div>
                 <div className="user-actions">
-                  <button className="edit-btn">Edit</button>
+                  <button
+                    onClick={() => navigate(`/edit-user/${user.id}`)}
+                    className="edit-btn"
+                  >
+                    Edit
+                  </button>
                   <button
                     onClick={() => handleDelete(user.id)}
                     className="delete-btn"
